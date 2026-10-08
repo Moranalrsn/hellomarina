@@ -1,6 +1,6 @@
 // Увеличение картинок в кейсах: клик — на весь экран, ещё клик — в полный размер
 (function () {
-  var imgs = document.querySelectorAll('.case-cover img, .figure img, .figure-pair img');
+  var imgs = document.querySelectorAll('.case-cover img, .figure img, .figure-pair img, .concept img');
   if (!imgs.length) return;
   var lb, big, hint, lastFocus, startY = null;
 
