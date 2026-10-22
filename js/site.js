@@ -32,6 +32,7 @@
 
   targets.forEach(function (el) {
     if (el.id === 'projects-title') return; // анимируется вместе с первым экраном (CSS)
+    if (el.matches('#projects .project:first-child')) return; // первый кейс тоже появляется вместе с первым экраном
     if (el.getBoundingClientRect().top < fold) return; // то, что видно сразу, не прячем
     el.classList.add('reveal-wait');
     io.observe(el);
